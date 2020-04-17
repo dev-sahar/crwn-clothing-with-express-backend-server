@@ -37,6 +37,10 @@ export const MenuItemContainer = styled.div`
     &:last-child {
       margin-left: 7.5px;
     }
+
+    @media screen and (max-width: 800px) {
+          height: 200px;
+      }
 `;
 
 export const BackgroundImgContainer = styled.div`
@@ -69,5 +73,18 @@ export const ContentContainer = styled.div`
       .subtitle {
         font-weight: lighter;
         font-size: 16px;
+      }
+
+      @media screen and (max-width: 800px) {
+        height: unset;
+        padding: 1em;
+
+        .title {
+          font-size: 0.7em;
+        }
+    
+        .subtitle {
+          font-size: 0.5em;
+        }
       }
 `;
